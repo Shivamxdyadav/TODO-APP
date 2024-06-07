@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 100%;
+  height: 100%;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.todo-form input,
+.todo-form button,
+.App button {
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.date-picker {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.date-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #333;
+  cursor: pointer;
+  width: 40px;
+}
+
+.date-item.selected {
+  background-color: #ff4500;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.date-section {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.date-header {
+  background-color: #444;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.todo-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #888;
+}
